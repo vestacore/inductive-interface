@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you reference this architectural pattern in your work, please cite it using the metadata below."
+title: "The Inductive Interface: Architectural Principles for Witnessing Systems"
+authors:
+  - family-names: "Leonid Boyarskykh"
+    given-names: "Leonid"
+    orcid: "https://orcid.org/0009-0000-5074-2641"
+type: article
+abstract: >
+  A domain-neutral architectural pattern describing the principles
+  of witnessing systems built around semantic engines: pincers as
+  instruments of capture, the grammar of unfold/fold/merge/govern,
+  inductive interface topology, and the substrate conditions for
+  honest commitment through time.
+keywords:
+  - semantic architecture
+  - witnessing systems
+  - human-AI collaboration
+  - inductive interface
+  - accountable procedures
+license: CC-BY-4.0
+date-released: "2026-04-22"
+url: "https://github.com/[username]/inductive-interface"
+version: "1.0"
+
