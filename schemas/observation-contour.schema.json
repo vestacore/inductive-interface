@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/semantic-inductive-ui/schemas/observation-contour.schema.json",
+  "title": "Observation Contour",
+  "description": "The semantic frame within which candidate evidence can become relevant.",
+  "type": "object",
+  "required": [
+    "observationQuestion",
+    "scope",
+    "exclusionRule",
+    "witness",
+    "targetStatus"
+  ],
+  "properties": {
+    "observationQuestion": {
+      "type": "string",
+      "title": "Observation question"
+    },
+    "scope": {
+      "type": "string",
+      "title": "Scope"
+    },
+    "exclusionRule": {
+      "type": "string",
+      "title": "Exclusion rule"
+    },
+    "witness": {
+      "type": "string",
+      "title": "Witness"
+    },
+    "targetStatus": {
+      "type": "string",
+      "title": "Target status"
+    }
+  }
+}

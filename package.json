@@ -1,0 +1,22 @@
+{
+  "name": "semantic-inductive-ui",
+  "version": "0.2.0",
+  "private": true,
+  "description": "A local research prototype for schema-driven semantic induction, recognition, correction, and witnessing.",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "inductive-ui",
+    "semantic-ui",
+    "recognition",
+    "citation-workflow",
+    "json-schema",
+    "witnessing"
+  ],
+  "license": "CC-BY-4.0"
+}

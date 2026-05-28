@@ -1,0 +1,202 @@
+{
+  "project": {
+    "name": "Semantic Inductive UI",
+    "version": "0.2.0",
+    "mode": "research-prototype",
+    "note": "Synthetic observation workflow inspired by the provided semantic article mockup. It models induction, recognition, correction, and witnessing over textual/citation evidence."
+  },
+  "createdAt": "2026-05-28T00:00:00.000Z",
+  "updatedAt": "2026-05-28T00:00:00.000Z",
+  "observation": {
+    "id": "obs_0_014",
+    "number": "0-014",
+    "status": "draft-induction",
+    "grade": "citation-grade",
+    "sourceCount": 6,
+    "title": "Unfold as informational overdraft.",
+    "author": "I. Pavlova",
+    "date": "2026-05-12",
+    "readTime": "18 min read",
+    "abstract": "This document records an observation about the structural economics of attention in environments where generative AI is deployed for regulatory, compliance, and accountability work: the obligation, attached to a named witness, to bring each opened position to a committed statement.",
+    "contour": {
+      "observationQuestion": "Does the model-recognized citation surface support the claim that unfold creates a fold debt attached to a named witness?",
+      "scope": "Recognition of citation-worthy sources adjacent to the drafted observation, including retained, merged, and rejected candidates.",
+      "exclusionRule": "Do not admit sources whose provenance is unresolved, retracted, or only lexically similar without claim adjacency.",
+      "witness": "named-author",
+      "targetStatus": "published observation with inspectable recognition trail"
+    },
+    "sections": [
+      {
+        "id": "section_visible_cost",
+        "roman": "I.",
+        "title": "The visible and the invisible cost.",
+        "body": "The cost of generative AI, as the industry currently accounts for it, is the cost of generation. Tokens are counted, compute is metered, latency is measured against per-call budgets. This is the visible cost, and it has the virtue of being legible to a cost dashboard."
+      },
+      {
+        "id": "section_recognition",
+        "roman": "II.",
+        "title": "The recognition step in detail.",
+        "body": "Recognition is not search. Search asks: does this string appear? Recognition asks: does this source make a claim adjacent to the one we are drafting, and is the relationship cite-worthy? The latter question requires reading. The model reads quickly; the human reads carefully; the interface makes the handoff legible."
+      },
+      {
+        "id": "section_sources",
+        "roman": "III.",
+        "title": "Sources, classes, and what we exclude.",
+        "body": "The model can place candidate sources on the surface, but it cannot silently convert proximity into acceptance. The user distinguishes retained sources, merged sources, rejected sources, and unresolved lacunae."
+      },
+      {
+        "id": "section_rejected",
+        "roman": "IV.",
+        "title": "Case study: the rejected candidate.",
+        "body": "The rejected candidate is more instructive than the fourteen that worked because it shows the negative boundary of the observation."
+      },
+      {
+        "id": "section_reproduce",
+        "roman": "V.",
+        "title": "Reproducing this observation.",
+        "body": "A future reader should be able to inspect the prepared surface, the computed recognition pass, the human distinctions, and the final fold."
+      },
+      {
+        "id": "section_log",
+        "roman": "VI.",
+        "title": "Footnotes & retractions log.",
+        "body": "Corrections and exclusions are not hidden; they remain attached to the observation as a provenance surface."
+      }
+    ]
+  },
+  "workflow": {
+    "currentFrameId": "frame_contour",
+    "frames": [
+      {
+        "id": "frame_contour",
+        "order": 1,
+        "label": "Hold contour",
+        "operation": "Name the semantic contour before judging individual sources.",
+        "status": "active"
+      },
+      {
+        "id": "frame_recognize",
+        "order": 2,
+        "label": "Recognize",
+        "operation": "Distinguish source adjacency from lexical search.",
+        "status": "waiting"
+      },
+      {
+        "id": "frame_negative",
+        "order": 3,
+        "label": "Isolate negative fit",
+        "operation": "Find what does not enter the observation without contradiction.",
+        "status": "waiting"
+      },
+      {
+        "id": "frame_correct",
+        "order": 4,
+        "label": "Correct fold",
+        "operation": "Write the correction that changes the observation surface.",
+        "status": "waiting"
+      },
+      {
+        "id": "frame_attest",
+        "order": 5,
+        "label": "Attest",
+        "operation": "Commit the observation with a visible distinction trail.",
+        "status": "waiting"
+      }
+    ]
+  },
+  "preparedSurface": {
+    "recordCount": 4210,
+    "candidateCount": 210,
+    "highConfidenceCount": 18,
+    "mediumConfidenceCount": 47,
+    "belowThresholdCount": 192,
+    "surfaceClaim": "Drafted candidate citations from 4,210 sources were placed on the observation surface for recognition and human fold."
+  },
+  "recognitionClaims": [
+    {
+      "id": "c-101",
+      "label": "Recognising candidates across heterogeneous sources",
+      "source": "arxiv.org/abs/2403.04210",
+      "sectionId": "section_visible_cost",
+      "modelConfidence": 0.94,
+      "modelRelation": "supports claim adjacency",
+      "recommendedAction": "retain",
+      "status": "unreviewed",
+      "whyVisible": "It distinguishes recognition from string search and supports the observation's claim about handoff cost."
+    },
+    {
+      "id": "c-107",
+      "label": "Reading carefully — Sereda, M. (2025)",
+      "source": "coagnes.io/0/0-019",
+      "sectionId": "section_recognition",
+      "modelConfidence": 0.9,
+      "modelRelation": "supports recognition as careful reading",
+      "recommendedAction": "retain",
+      "status": "unreviewed",
+      "whyVisible": "It is semantically adjacent to the recognition step rather than merely lexically similar."
+    },
+    {
+      "id": "c-121",
+      "label": "Sourcing the unsourced — internal note, 2026-04",
+      "source": "internal revision 02",
+      "sectionId": "section_sources",
+      "modelConfidence": 0.82,
+      "modelRelation": "overlaps existing internal note",
+      "recommendedAction": "merge",
+      "status": "unreviewed",
+      "whyVisible": "It duplicates a prior internal formulation and should become a merge, not a new citation."
+    },
+    {
+      "id": "c-209",
+      "label": "Pavlov, 2024 preprint",
+      "source": "candidate preprint",
+      "sectionId": "section_rejected",
+      "modelConfidence": 0.91,
+      "modelRelation": "appears to support citation debt claim",
+      "recommendedAction": "retain",
+      "status": "unreviewed",
+      "whyVisible": "It looks like a strong candidate until provenance is inspected.",
+      "negativeSignal": "Author later retracted on Twitter; retraction not yet indexed."
+    },
+    {
+      "id": "c-177",
+      "label": "Attention cost as budget pressure",
+      "source": "workshop memo 2025-11",
+      "sectionId": "section_visible_cost",
+      "modelConfidence": 0.76,
+      "modelRelation": "medium confidence background",
+      "recommendedAction": "review",
+      "status": "unreviewed",
+      "whyVisible": "It may provide context, but the claim adjacency is weaker than the high-confidence set."
+    },
+    {
+      "id": "c-188",
+      "label": "Audit trails for generated candidates",
+      "source": "lab note 2026-02",
+      "sectionId": "section_log",
+      "modelConfidence": 0.73,
+      "modelRelation": "supports inspectable recognition trail",
+      "recommendedAction": "review",
+      "status": "unreviewed",
+      "whyVisible": "It points toward reproducibility but needs a named witness to accept it."
+    }
+  ],
+  "computedFindings": [
+    {
+      "id": "model_recognition_summary",
+      "kind": "recognition",
+      "status": "computed",
+      "statement": "18 high-confidence candidates were surfaced first because they carry the highest risk of becoming silent machine acceptance."
+    },
+    {
+      "id": "negative_fit_c_209",
+      "kind": "negative-fit",
+      "candidateId": "c-209",
+      "status": "open",
+      "statement": "Candidate c-209 cannot enter the observation as support because a retraction signal exists outside the indexed corpus."
+    }
+  ],
+  "decisions": [],
+  "corrections": [],
+  "attestations": []
+}

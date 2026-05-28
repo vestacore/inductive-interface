@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/semantic-inductive-ui/schemas/semantic-attestation.schema.json",
+  "title": "Semantic Attestation",
+  "description": "A named fold over the observation after recognition, negative fit, and correction have been made inspectable.",
+  "type": "object",
+  "required": [
+    "attestationKind",
+    "statement",
+    "witnessId"
+  ],
+  "properties": {
+    "attestationKind": {
+      "type": "string",
+      "enum": [
+        "publish_observation",
+        "hold_as_draft",
+        "attest_exception",
+        "request_more_prepared"
+      ],
+      "title": "Attestation kind"
+    },
+    "statement": {
+      "type": "string",
+      "title": "Statement"
+    },
+    "witnessId": {
+      "type": "string",
+      "title": "Witness id"
+    },
+    "basisPreparedIds": {
+      "type": "string",
+      "title": "Basis prepared ids"
+    },
+    "basisComputedIds": {
+      "type": "string",
+      "title": "Basis computed ids"
+    },
+    "basisDecisionIds": {
+      "type": "string",
+      "title": "Basis decision ids"
+    }
+  }
+}

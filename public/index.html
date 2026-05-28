@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Semantic Inductive UI</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="article-hero">
+      <div class="hero-inner">
+        <button id="backButton" class="text-button" type="button">Back to observations</button>
+        <div class="meta-line">
+          <span id="observationNumber">0-014</span>
+          <span id="publicationState" class="state-chip">Draft induction</span>
+          <span id="gradeLine">Citation-grade</span>
+        </div>
+        <div class="title-row">
+          <div>
+            <div class="gold-rule"></div>
+            <h1 id="observationTitle">Loading...</h1>
+            <p id="byline" class="byline"></p>
+          </div>
+          <button id="assistantButton" class="assistant-button" type="button">Open in assistant</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="inductive-shell">
+      <section class="document-column">
+        <nav id="frameStepper" class="frame-stepper" aria-label="Inductive frames"></nav>
+
+        <section class="frame-surface">
+          <div class="frame-header">
+            <div>
+              <p id="frameKicker" class="eyebrow">Frame</p>
+              <h2 id="frameTitle">Loading...</h2>
+              <p id="frameOperation" class="operation"></p>
+            </div>
+            <div id="frameStatus" class="status-pill">Loading</div>
+          </div>
+
+          <div id="frameHost" class="frame-host"></div>
+
+          <div class="frame-actions">
+            <button id="previousFrame" class="icon-button" type="button" title="Previous frame" aria-label="Previous frame">Prev</button>
+            <button id="nextFrame" class="primary-button" type="button">Next Frame</button>
+          </div>
+        </section>
+
+        <article id="articleSurface" class="article-surface"></article>
+      </section>
+
+      <aside class="rail">
+        <section class="rail-section">
+          <p class="eyebrow">Status of distinction</p>
+          <div id="distinctionTrail" class="trail-list"></div>
+        </section>
+
+        <section class="rail-section">
+          <p class="eyebrow">Sections</p>
+          <ol id="sectionsList" class="sections-list"></ol>
+        </section>
+
+        <section class="rail-section">
+          <p class="eyebrow">Citations</p>
+          <div id="citationRail" class="citation-list"></div>
+        </section>
+
+        <section class="rail-section">
+          <p class="eyebrow">JSON Form</p>
+          <div id="formTabs" class="form-tabs"></div>
+          <div id="formHost" class="form-host"></div>
+        </section>
+
+        <section class="rail-section">
+          <p class="eyebrow">Substrate</p>
+          <div id="eventsLog" class="event-list"></div>
+        </section>
+
+        <div class="rail-actions">
+          <button id="reloadButton" class="text-button" type="button">Reload</button>
+          <button id="resetButton" class="text-button danger" type="button">Reset sample</button>
+        </div>
+      </aside>
+    </main>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

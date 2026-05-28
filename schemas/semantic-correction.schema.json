@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/semantic-inductive-ui/schemas/semantic-correction.schema.json",
+  "title": "Semantic Correction",
+  "description": "A correction that changes the observation surface after a negative fit is distinguished.",
+  "type": "object",
+  "required": [
+    "residualId",
+    "mode",
+    "targetSectionId",
+    "statement"
+  ],
+  "properties": {
+    "residualId": {
+      "type": "string",
+      "title": "Residual id"
+    },
+    "mode": {
+      "type": "string",
+      "enum": [
+        "reject_candidate",
+        "merge_candidate",
+        "add_footnote",
+        "request_source",
+        "rewrite_section"
+      ],
+      "title": "Correction mode"
+    },
+    "candidateId": {
+      "type": "string",
+      "title": "Candidate id"
+    },
+    "targetSectionId": {
+      "type": "string",
+      "title": "Target section"
+    },
+    "statement": {
+      "type": "string",
+      "title": "Correction statement"
+    },
+    "surfaceChange": {
+      "type": "string",
+      "title": "Surface change"
+    },
+    "createdBy": {
+      "type": "string",
+      "title": "Created by"
+    }
+  }
+}

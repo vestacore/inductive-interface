@@ -1,0 +1,28 @@
+{
+  "forms": [
+    {
+      "id": "contour",
+      "label": "Contour",
+      "schema": "/schemas/observation-contour.schema.json",
+      "endpoint": "/api/contour"
+    },
+    {
+      "id": "decision",
+      "label": "Decision",
+      "schema": "/schemas/source-decision.schema.json",
+      "endpoint": "/api/decisions"
+    },
+    {
+      "id": "correction",
+      "label": "Correction",
+      "schema": "/schemas/semantic-correction.schema.json",
+      "endpoint": "/api/corrections"
+    },
+    {
+      "id": "attestation",
+      "label": "Attestation",
+      "schema": "/schemas/semantic-attestation.schema.json",
+      "endpoint": "/api/attestations"
+    }
+  ]
+}

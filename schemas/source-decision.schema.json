@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/semantic-inductive-ui/schemas/source-decision.schema.json",
+  "title": "Source Decision",
+  "description": "A human distinction over a model-recognized candidate source.",
+  "type": "object",
+  "required": [
+    "candidateId",
+    "decisionKind",
+    "rationale"
+  ],
+  "properties": {
+    "candidateId": {
+      "type": "string",
+      "title": "Candidate id"
+    },
+    "decisionKind": {
+      "type": "string",
+      "enum": [
+        "retain",
+        "merge",
+        "reject",
+        "needs_more_prepared"
+      ],
+      "title": "Decision"
+    },
+    "rationale": {
+      "type": "string",
+      "title": "Rationale"
+    },
+    "distinguishedBy": {
+      "type": "string",
+      "title": "Distinguished by"
+    },
+    "decidedBy": {
+      "type": "string",
+      "title": "Decided by"
+    }
+  }
+}
